@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    margin-block-start: 3rem;
+    background-color: black;
+    color: white;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+select{
+    width: 15rem;
+    
+}
+div{
+    margin-left: 5rem;
+}
+h4{
+    margin-left: 2.5rem;
+}
+table{
+    margin-left: 1rem;
+}
+.negro{
+    background-color: black;
+    color: white;
+}
+.cafe{
+    background-color: #6f4e37;
+    color: white;
+}
+.rojo{
+    background-color: red;
+    color: white;
+}
+.naranja{
+    background-color: orange;
+    color: white;
+}
+.amarillo{
+    background-color: yellow;
+}
+.verde{
+    background-color: green;
+    color: white;
+}
+.azul{
+    background-color: blue;
+    color: white;
+}
+.violeta{
+    background-color: violet;
+    color: white;
+}
+.gris{
+    background-color: gray;
+    color: white;
+}
+.imagen{
+    width: 8cm;
+    height: 8cm;
+    margin-left: 37rem;
+    margin-top: -12rem;
+}

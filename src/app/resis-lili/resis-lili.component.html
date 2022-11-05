@@ -1,0 +1,101 @@
+
+<h1>CALCULAR RESISTENCIAS</h1>
+<br>
+<br>
+
+    
+<div id="PrimerInterface" class="row justify-content-center align-items-center g-2">
+    <div id="colores1" class="col">
+        <h4>Primera Banda</h4>
+        <select class="form-select" [(ngModel)]="frangaUno" name="frangaUno" aria-label="Default select example">
+            <option class="negro" value="Negro">Negro</option>
+            <option class="cafe" value="Cafe">Cafe</option>
+            <option class="rojo" value="Rojo">Rojo</option>
+            <option class="naranja" value="Naranja">Naranja</option>
+            <option class="amarillo" value="Amarillo">Amarillo</option>
+            <option class="verde" value="Verde">Verde</option>
+            <option class="azul" value="Azul">Azul</option>
+            <option class="violeta" value="Violeta">Violeta</option>
+            <option class="gris" value="Gris">Gris</option>
+            <option class="blanco" value="Blanco">Blanco</option>
+        </select>
+    </div>
+    <div id="colores2" class="col">
+        <h4>Segunda Banda</h4>
+        <select class="form-select" [(ngModel)]="frangaDos" name="frangaDos" aria-label="Default select example">
+            <option class="negro" value="Negro">Negro</option>
+            <option class="cafe" value="Cafe">Cafe</option>
+            <option class="rojo" value="Rojo">Rojo</option>
+            <option class="naranja" value="Naranja">Naranja</option>
+            <option class="amarillo" value="Amarillo">Amarillo</option>
+            <option class="verde" value="Verde">Verde</option>
+            <option class="azul" value="Azul">Azul</option>
+            <option class="violeta" value="Violeta">Violeta</option>
+            <option class="gris" value="Gris">Gris</option>
+            <option class="blanco" value="Blanco">Blanco</option>
+        </select>
+    </div>
+    <div id="colores3" class="col">
+        <h4>Tercera Banda</h4>
+        <select class="form-select" [(ngModel)]="frangaTres" name="frangaTres" aria-label="Default select example">
+            <option class="negro" value="Negro">Negro</option>
+            <option class="cafe" value="Cafe">Cafe</option>
+            <option class="rojo" value="Rojo">Rojo</option>
+            <option class="naranja" value="Naranja">Naranja</option>
+            <option class="amarillo" value="Amarillo">Amarillo</option>
+            <option class="verde" value="Verde">Verde</option>
+            <option class="azul" value="Azul">Azul</option>
+            <option class="violeta" value="Violeta">Violeta</option>
+            <option class="gris" value="Gris">Gris</option>
+            <option class="blanco" value="Blanco">Blanco</option>
+        </select>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        
+        <div class="container">
+            <h5>Tolerancia</h5>
+            <br>
+            <input type="radio" name="toleran" value="Dorado" [(ngModel)]="toleran"> Dorado<br>
+            <input type="radio" name="toleran" value="Plata" [(ngModel)]="toleran"> Plata <br>
+            <br>
+            <br>
+            <br>
+            <button (click)="Funcion()" class="btn btn-dark">Registrar</button>
+            <img class="imagen" src="https://www.areatecnologia.com/electricidad/imagenes/codigo-colores-resistencias.jpg">
+        </div>
+        </div>
+        <br>
+        <br>
+        <div>
+        </div>
+        <div id="result" class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Color1</th>
+                    <th scope="col">Color2</th>
+                    <th scope="col">Color3</th>
+                    <th scope="col">Tolerancia</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Maximo</th>
+                    <th scope="col">Minimo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="celda1">{{frangaUno}}</td>
+                    <td id="celda2">{{frangaDos}}</td>
+                    <td id="celda3">{{frangaTres}}</td>
+                    <td id="celda4">{{toleran}}</td>
+                    <td>{{resultado}}</td>
+                      <td>{{max}}</td>
+                      <td>{{min}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+</div>
